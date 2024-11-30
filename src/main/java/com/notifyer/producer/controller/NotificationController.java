@@ -1,14 +1,12 @@
 package com.notifyer.producer.controller;
 
-import com.notifyer.producer.service.WhatsAppNotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("notification")
 public class NotificationController {
-    @Autowired
-    WhatsAppNotificationService whatsAppNotificationService;
+
 
     @GetMapping("/healthcheck")
     public String healthCheck(){
